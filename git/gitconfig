@@ -1,0 +1,8 @@
+# Copy this to /etc/gitconfig
+[color]
+ 	ui = auto
+[core]
+	autocrlf = true
+[alias]
+	todo = !git ls-files | xargs grep --color=auto -onE '(TODO|FIXME):.*$'
+    l = log --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr - %an)%Creset %C(white)%d%Creset %s' --abbrev-commit --date=relative
