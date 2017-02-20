@@ -19,7 +19,9 @@ mkdir -p ~/.config/i3
 # Copy old configs to old dotifiles folder, just in case
 mv /etc/gitconfig $OLD_DOTFILES/git/gitconfig | true
 mv ~/.config/i3/config $OLD_DOTFILES/i3/config | true
+mv ~/.vimrc $OLD_DOTFILES/.vimrc | true
 
 # Link configs inside dotfiles folder into respective folders
 ln -s ~/dotfiles/git/gitconfig /etc/gitconfig
 ln -s ~/dotfiles/i3/config ~/.config/i3/config
+ln -s ~/dotfiles/.vimrc ~/.config/.vimrc
