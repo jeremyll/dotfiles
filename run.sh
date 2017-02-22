@@ -24,4 +24,4 @@ mv ~/.vimrc $OLD_DOTFILES/.vimrc || true
 # Link configs inside dotfiles folder into respective folders
 ln -f -s ~/.dotfiles/git/gitconfig /etc/gitconfig
 ln -f -s ~/.dotfiles/i3/config ~/.config/i3/config
-ln -f -s ~/.dotfiles/.vimrc ~/.config/.vimrc
+ln -f -s ~/.dotfiles/.vimrc ~/.vimrc
