@@ -7,7 +7,7 @@ mkdir -p .dotfiles
 cd .dotfiles
 
 git init
-git remote add origin git@github.com:jeremyll/dotfiles.git 
+git remote add origin https://github.com/jeremyll/dotfiles.git
 git pull origin master
 
 ./run.sh
