@@ -3,8 +3,11 @@
 #     wget -qO- https://raw.githubusercontent.com/jeremyll/dotfiles/master/install | sh
 
 cd ~
-
-git clone git@github.com:jeremyll/dotfiles.git .dotfiles
+mkdir -p .dotfiles
 cd .dotfiles
+
+git init
+git remote add origin git@github.com:jeremyll/dotfiles.git 
+git pull origin master
 
 ./run.sh
