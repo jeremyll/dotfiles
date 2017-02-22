@@ -5,11 +5,9 @@ set -e # Stop on error
 set -x # Show debug
 
 cd ~
-mkdir -p .dotfiles
-cd .dotfiles
 
-git init
-git remote add origin https://github.com/jeremyll/dotfiles.git
-git pull origin master
+git clone https://github.com/jeremyll/dotfiles.git .dotfiles
+
+cd .dotfiles
 
 ./run.sh
