@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Oneliner:
+#     wget -qO- https://raw.githubusercontent.com/jeremyll/dotfiles/master/install | sh
+
+cd ~
+
+git clone git@github.com:jeremyll/dotfiles.git .dotfiles
+cd .dotfiles
+
+./run.sh
