@@ -2,6 +2,7 @@
 # Method from github.com/robbintt - Thanks!
 
 set -e # Do not continue on error
+set -x # Show Debug
 
 cd ~
 
