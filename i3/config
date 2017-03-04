@@ -180,3 +180,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # ctrl key as caps lock
 exec setxkbmap -option ctrl:nocaps
 
+# Random background slideshow (600 seconds per image)
+exec --no-startup-id feh -D 600 --randomize --bg-max ~/backgrounds/*
+
