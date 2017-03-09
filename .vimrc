@@ -63,7 +63,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h
   \ match BadWhitespace /\s\+$/
 
 " Web formating
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
+"au BufNewFile,BufRead *.js, *.html, *.css
+"    \ set tabstop=2 |
+"    \ set softtabstop=2 |
+"    \ set shiftwidth=2
