@@ -183,3 +183,6 @@ exec setxkbmap -option ctrl:nocaps
 # Random background slideshow (600 seconds per image)
 exec --no-startup-id feh -D 600 --randomize --bg-max ~/backgrounds/*
 
+
+# macbook air mission control button (where f4 is) suspend and wallpaper
+bindcode 212 exec "systemctl suspend; i3lock -t -i ~/windows.png"
