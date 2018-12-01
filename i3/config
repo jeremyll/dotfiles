@@ -160,7 +160,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         mode hide 
-        status_command i3status
+        status_command py3status
         tray_output primary
 }
 
