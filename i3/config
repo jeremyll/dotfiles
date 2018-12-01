@@ -183,6 +183,11 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+# Screen Rotation
+bindsym Shift+XF86AudioPlay exec xrandr --output eDP-1 --rotate normal
+bindsym Control+XF86AudioPlay exec xrandr --output eDP-1 --rotate inverted
+bindsym Shift+XF86AudioNext exec xrandr --output eDP-1 --rotate right
+bindsym Shift+XF86AudioPrev exec xrandr --output eDP-1 --rotate left
 
 # ctrl key as caps lock
 exec setxkbmap -option ctrl:nocaps
