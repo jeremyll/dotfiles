@@ -80,3 +80,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h
 "    \ set tabstop=2 |
 "    \ set softtabstop=2 |
 "    \ set shiftwidth=2
+
+" ctrlpvim
+let g:ctrlp_types = ['mru', 'fil', 'buf']
+
+colorscheme torte
