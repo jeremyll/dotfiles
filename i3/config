@@ -190,7 +190,6 @@ bindsym Shift+XF86AudioNext exec xrandr --output eDP-1 --rotate right
 bindsym Shift+XF86AudioPrev exec xrandr --output eDP-1 --rotate left
 
 # ctrl key as caps lock
-exec setxkbmap -option ctrl:nocaps
 
 # Random background slideshow (600 seconds per image)
 exec --no-startup-id feh -D 600 --randomize --bg-max ~/backgrounds/*
