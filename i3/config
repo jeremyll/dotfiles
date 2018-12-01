@@ -197,3 +197,14 @@ exec --no-startup-id feh -D 600 --randomize --bg-max ~/backgrounds/*
 
 # macbook air mission control button (where f4 is) suspend and wallpaper
 bindsym F12 exec "systemctl hibernate; i3lock -c 000082 -i ~/windows.png"
+
+bindsym $mod+Shift+F7 exec "feh -D 600 --randomize --bg-max ~/backgrounds/*"
+
+# Jump to urgent workspace
+bindsym $mod+x [urgent=latest] focus
+
+bindsym $mod+Tab workspace back_and_forth
+
+# Scratchpad
+bindsym $mod+u scratchpad show
+bindsym $mod+Shift+u move scratchpad
