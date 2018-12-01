@@ -15,14 +15,15 @@ general {
 #order += "disk /"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
+order += "volume_status"
 order += "wireless _first_"
 order += "ethernet _first_"
+order += "external_script whatsmyip"
 order += "battery 0"
-#order += "load"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
+        format_up = "(%quality at %essid) %ip"
         #format_down = "W: down"
         format_down = ""
 }
@@ -51,13 +52,42 @@ run_watch VPN {
 
 tztime local {
         #format = "%Y-%m-%d %H:%M:%S"
-        format = "%Y-%m-%d %I:%M:%S %p"
+        format = "%Y-%m-%d | %I:%M:%S %p"
 }
 
 load {
         format = "%1min"
 }
 
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+}
+
 disk "/" {
         format = "%avail"
+}
+
+apt_updates {}
+
+check_tcp {
+   format = "{state}"
+   host = "google.com"
+   port = 80
+}
+
+external_script whatsmyip{
+    format = "{output}"
+    cache_timeout = 300
+    script_path = "get_ip"
+    strip_output = True
+}
+
+spotify {
+   format_stopped = ""
+   format_down = ""
+}
+
+sysdata {
+    format = "[\?color=cpu CPU: {cpu_usage}%], [\?color=mem Mem: {mem_used}/{mem_total} GB ({mem_used_percent}%)] [\?color=temp {cpu_temp}F]"
+    temp_unit = "F"
 }
