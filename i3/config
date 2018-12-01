@@ -162,6 +162,9 @@ bar {
         mode hide 
         status_command py3status
         tray_output primary
+        position bottom
+        modifier $mod
+        strip_workspace_numbers yes
 }
 
 ### New Additions I Made
