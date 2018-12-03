@@ -32,5 +32,5 @@ ln -f -s ~/.dotfiles/git/gitconfig /etc/gitconfig
 ln -f -s ~/.dotfiles/i3/config ~/.config/i3/config
 ln -f -s ~/.dotfiles/i3/status ~/.config/i3/status
 ln -f -s ~/.dotfiles/.vimrc ~/.vimrc
-ln -f -s ~/redshift.conf ~/.config/redshift.conf
+ln -f -s ~/.dotfiles/redshift.conf ~/.config/redshift.conf
 ln -f -s ~/.dotfiles/.Xmodmap ~/.Xmodmap
