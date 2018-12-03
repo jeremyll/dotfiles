@@ -171,12 +171,7 @@ bar {
 new_window pixel 1
 
 # Volume
-bindsym XF86AudioRaiseVolume exec amixer -c 1 -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -c 1 -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -c 1 -D pulse -q set Master toggle
 # Brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
