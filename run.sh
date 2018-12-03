@@ -25,6 +25,7 @@ mv ~/.config/i3/config $OLD_DOTFILES/i3/config || true
 mv ~/.config/i3/status $OLD_DOTFILES/i3status/config || true
 mv ~/.vimrc $OLD_DOTFILES/.vimrc || true
 mv ~/.config/redshift.conf $OLD_DOTFILES/redshift || true
+mv ~/.Xmodmap $OLD_DOTFILES || true
 
 # Link configs inside dotfiles folder into respective folders
 ln -f -s ~/.dotfiles/git/gitconfig /etc/gitconfig
@@ -32,3 +33,4 @@ ln -f -s ~/.dotfiles/i3/config ~/.config/i3/config
 ln -f -s ~/.dotfiles/i3/status ~/.config/i3/status
 ln -f -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -f -s ~/redshift.conf ~/.config/redshift.conf
+ln -f -s ~/.dotfiles/.Xmodmap ~/.Xmodmap
